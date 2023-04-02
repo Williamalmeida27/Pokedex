@@ -20,37 +20,38 @@
     <!--Estilos CSS-->
     <link rel="stylesheet" href="./assets/css/global.css">
     <link rel="stylesheet" href="./assets/css/pokedex.css">
+    <!-- CDN Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-aFq/bzH65dt+w6FI2ooMVUpc+21e0SRygnTpmBvdBgSdnuTN7QbdgL+OapgHtvPp" crossorigin="anonymous">
+
 </head>
 
 <body>
 
     <section class="content">
         <h1>Pokedex</h1>
-
         <ol id="pokemonList" class="pokemons">
-            <li class="pokemon">
-                <span class="number">#001</span>
-                <span class="name">Bulbasaur</span>
+            <!-- List Pokemon Here -->
 
-                <div class="detail">
-                    <ol class="types">
-                        <li class="type">grass</li>
-                        <li class="type">poison</li>
-
-                    </ol>
-
-                    <img src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/1.svg"
-                        alt="Bulbasaur">
-                </div>
-
-            </li>
+            
         </ol>
+
+        <div class="pagination">
+            <button id="loadMoreButton">
+                +
+            </button>
+        </div>
 
     </section>
 
     <!--Javascript-->
+    <script src="./assets/js/pokemon-Model.js"></script>
     <script src="./assets/js/poke-Api.js"></script>
     <script src="./assets/js/main.js"></script>
+    <!-- CDN Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-qKXV1j0HvMUeCBQ+QVp7JcfGl760yU08IQ+GpUo5hlbpg51QRiuqHAJz8+BrxE/N"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
